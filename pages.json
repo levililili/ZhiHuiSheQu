@@ -1,0 +1,100 @@
+{
+	// 注意：JSON文件中禁止书写注释！只有uni-app中可以（uni-app会重新编译，把JSON中的注释去掉）！！！
+	// pages: 为每一个页面组件分配一个路由地址
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			// 页面标题栏部分的内容和样式设定
+			"style": {
+				"navigationBarTitleText": "首页",
+				// "navigationBarBackgroundColor": "#6eda0c",
+				// "navigationBarTextStyle": "white",
+				// 导航条样式：自定义（即不要出现默认导航条）
+				// "navigationStyle": "custom",
+				// 是否启用下拉刷新
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "用户登录"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "用户注册"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "用户中心"
+				// "navigationBarBackgroundColor": "#6eda0c"
+			}
+		}, {
+			"path": "pages/property/property",
+			"style": {
+				"navigationBarTitleText": "物业"
+			}
+
+		}, {
+			"path": "pages/community/community",
+			"style": {
+				"navigationBarTitleText": "社区"
+			}
+
+		}
+	],
+	// 如果某个页面没有指定自己的样式，则使用"全局样式"
+	// 专业的样式在pages写，公共的就不要写了
+	"globalStyle": {
+		// 导航条文本颜色，只有两个取值：white\black
+		"navigationBarTextStyle": "white",
+		// 导航条标题文本
+		"navigationBarTitleText": "智慧社区",
+		// 导航条背景颜色
+		"navigationBarBackgroundColor": "#009900",
+		// 是否启用下拉刷新 - 默认false
+		"enablePullDownRefresh": false,
+		// 导航条的默认杨树：使用默认提供的导航条 - 默认default
+		"navigationStyle": "default",
+		// 页面掀开后下面的背景颜色（仅小程序效果）
+		"backgroundColor": "#F8F8F8"
+	},
+	// 页签栏
+	"tabBar": {
+		// 未被选中的文字的颜色
+		"color": "#8a8a8a",
+		// tab上的文字被选中时的颜色
+		"selectedColor": "#333",
+		// 页签列表，H5中对页签的数量没有限制，但是小程序限制是2~5
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/img/home.png",
+				"selectedIconPath": "static/img/home_active.png"
+			},
+			{
+				"pagePath": "pages/property/property",
+				"text": "物业",
+				"iconPath": "static/img/property.png",
+				"selectedIconPath": "static/img/property_active.png"
+			},
+			{
+				"pagePath": "pages/community/community",
+				"text": "社区",
+				"iconPath": "static/img/community.png",
+				"selectedIconPath": "static/img/community_active.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/img/my.png",
+				"selectedIconPath": "static/img/my_active.png"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

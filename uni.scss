@@ -1,0 +1,100 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+
+/* 颜色变量 */
+$zh-theme-lighter: #CCCC99;	//更加浅的主题色
+$zh-theme-light: #7AC67A;	// 稍浅一点的主题色
+$zh-theme: #6EDA0C;		  	// 主题色
+$zh-theme-dark: #009900;	// 稍深一点的主题色
+// $zh-theme-dark: #006600;	// 更深一点的主题色 - 该项目未指定
+
+$zh-theme-reverse-lighter: #FBDD06;	//更加浅的主题色反色
+$zh-theme-reverse-light: #F3900B;	// 稍浅一点的主题色反色
+$zh-theme-reverse: #FF6633;		  	// 主题色反色
+$zh-theme-reverse-dark: #A30009;	// 稍深一点的主题色反色
+
+$zh-grey-lighter: #F2F2F2;	//更加浅的灰色
+$zh-grey-light: #8A8A8A;	// 稍浅一点的灰色
+$zh-grey: #363636;		  	// 标准灰色
+$zh-grey-dark: #000000;	// 稍深一点的灰色
+
+$zh-primary: #1296DB;	// 基础色/偏蓝的颜色
+$zh-seconderay: #F29E9E;	// 二等色/偏粉的颜色
+
+/* 行为相关颜色 */
+// $uni-color-primary: #007aff;
+$uni-color-primary: $zh-primary;
+// $uni-color-success: #4cd964;
+$uni-color-success: $zh-theme;
+// $uni-color-warning: #f0ad4e;
+$uni-color-warning: $zh-theme-reverse-lighter;
+// $uni-color-error: #dd524d;
+$uni-color-error: $zh-theme-reverse-dark;
+
+/* 文字基本颜色 */
+$uni-text-color: $zh-grey;//基本色
+$uni-text-color-inverse:$zh-grey-lighter;//反色
+$uni-text-color-grey: $zh-grey-light;//辅助灰色，如加载更多的提示信息
+$uni-text-color-placeholder: $zh-grey-light;
+$uni-text-color-disable: $zh-grey-light;//禁用
+
+/* 背景颜色 */
+$uni-bg-color:#ffffff;
+$uni-bg-color-grey: $zh-grey-lighter;
+$uni-bg-color-hover:#f1f1f1;//点击状态颜色
+$uni-bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
+
+/* 边框颜色 */
+$uni-border-color:$zh-grey;
+
+/* 尺寸变量 */
+
+
+/* 文字尺寸 */
+$uni-font-size-sm:24rpx;		//small 小号字号
+$uni-font-size-md:26rpx			//medium 中号字号
+$uni-font-size-base:28rpx;	//base 基础字号
+$uni-font-size-lg:32rpx;		//large 大型字号
+
+/* 图片尺寸 */
+$uni-img-size-sm:40rpx;
+$uni-img-size-base:52rpx;
+$uni-img-size-lg:80rpx;
+
+/* Border Radius */
+$uni-border-radius-sm: 4rpx;
+$uni-border-radius-base: 6rpx;
+$uni-border-radius-lg: 12rpx;
+$uni-border-radius-circle: 50%;
+
+/* 水平间距 */
+$uni-spacing-row-sm: 10rpx;
+$uni-spacing-row-base: 20rpx;
+$uni-spacing-row-lg: 30rpx;
+
+/* 垂直间距 */
+$uni-spacing-col-sm: 8rpx;
+$uni-spacing-col-base: 16rpx;
+$uni-spacing-col-lg: 24rpx;
+
+/* 透明度 */
+$uni-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$uni-color-title: #2C405A; // 文章标题颜色
+$uni-font-size-title:32rpx;
+$uni-color-subtitle: #555555; // 二级标题颜色
+$uni-font-size-subtitle:26rpx;
+$uni-color-paragraph: #3F536E; // 文章段落颜色
+$uni-font-size-paragraph:24rpx;
